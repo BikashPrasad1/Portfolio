@@ -4,7 +4,7 @@
 const PROJECT_TYPES = Object.freeze({
   PORTFOLIO: "portfolio",
   ECOMMERCE: "ecommerce",
-  DASHBOARD: "dashboard",
+  LANDINGPAGE: "LANDING-PAGE",
 });
 
 /* ================================
@@ -25,8 +25,8 @@ export const projects = Object.freeze([
     technologies: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
 
     links: {
-      live: "https://your-site.netlify.app",
-      github: "https://github.com/username/portfolio",
+      live: "",
+      github: "https://github.com/BikashPrasad1/Portfolio.git",
     },
 
     aria: {
@@ -35,42 +35,42 @@ export const projects = Object.freeze([
   },
 
   {
-    id: "commerce-studio",
-    title: "Commerce Studio",
+    id: "E-commerce",
+    title: "E-commerce",
     description:
-      "Responsive ecommerce UI with product cards, filters, and a checkout flow focused on conversion and performance.",
+      "Responsive E-commerce UI with product cards, filters, and a checkout flow focused on conversion and performance.",
 
     image: "/projects/commerce.png",
     year: 2025,
-    featured: false,
+    featured: true,
 
     type: PROJECT_TYPES.ECOMMERCE,
+    technologies: ["React", "Tailwind CSS", "JavaScript"],
+
+    links: {github: "https://github.com/BikashPrasad1/E-commerce.git",},
+
+    aria: {
+      label: "View Commerce Studio E-commerce UI project",
+    },
+  },
+
+  {
+    id: "Landing-Page",
+    title: "LANDING-PAGE",
+    description:
+      "A landing page is a standalone, focused web page created specifically for a marketing or advertising campaign.",
+
+    image: "/projects/saas.png",
+    year: 2024,
+    featured: true,
+
+    type: PROJECT_TYPES.LANDINGPAGE,
     technologies: ["React", "Tailwind CSS", "JavaScript"],
 
     links: {},
 
     aria: {
-      label: "View Commerce Studio ecommerce UI project",
-    },
-  },
-
-  {
-    id: "saas-insight",
-    title: "SaaS Insight Dashboard",
-    description:
-      "Admin dashboard UI featuring charts, tables, and reusable layout components.",
-
-    image: "/projects/saas.png",
-    year: 2024,
-    featured: false,
-
-    type: PROJECT_TYPES.DASHBOARD,
-    technologies: ["React", "Redux", "REST API"],
-
-    links: {},
-
-    aria: {
-      label: "View SaaS Insight dashboard project",
+      label: "View LANDING-PAGE project",
     },
   },
 ]);
