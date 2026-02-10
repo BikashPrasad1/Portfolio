@@ -18,7 +18,7 @@ export default function Projects() {
               Modern product builds with crisp motion and real-world impact.
             </h2>
             <p className="mt-4 text-muted">
-              From conversion-driven storefronts to data-rich dashboards, these
+              From conversion-driven storefronts to data-rich LANDING-PAGEs, these
               builds highlight how I translate product goals into polished
               interfaces.
             </p>
@@ -73,7 +73,7 @@ function ProjectCard({ project }) {
       ref={ref}
       onMouseMove={onMouseMove}
       onMouseLeave={onMouseLeave}
-      className="group relative overflow-hidden rounded-3xl bg-[rgba(var(--surface),0.7)] p-6 transition hover:-translate-y-1 will-change-transform"
+      className="group relative overflow-hidden rounded-3xl bg-[rgba(var(--surface),0.7)] p-6 transition hover:-translate-y-1 will-change-transform border"
     >
       <div className="absolute inset-x-0 top-0 h-24 bg-[radial-gradient(circle_at_top,rgba(99,102,241,0.35),transparent_70%)] opacity-70 transition group-hover:opacity-100" />
       <div className="relative">
